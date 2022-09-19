@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Responsive Website</title>
+    <meta name="description" content="Respnsive web application" />
+    <meta name="keyword" content="responsive" />
+    <meta name="author" content="Gourav Sharma" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="close">
+        <span class="closeButton" onclick="toggleClass()">
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div class="sidebarContainer">
+        <div class="sidebarOption" onclick="showDropdown(1)">
+          <div class="sidebarHeader">
+            <h3>Get Started</h3>
+            <span class="arrow down"></span>
+          </div>
+          <div id="firstDropdown">
+            <ul>
+              <li><a href="https://goldsgym.in/gold-gyms.html">Our Gyms India</a></li>
+              <li><a href="https://goldsgymnepal.com/">Our Gyms Nepal</a></li>
+              <li><a href="https://goldsgym.in/#commin-soon">Coming Soon</a></li>
+              <li><a href="https://goldsgym.in/pre-sales.html">Pre-Sales</a></li>
+              <li><a href="https://goldsgym.in/amazing-offers.html">Amazing Offers</a></li>
+              <li><a href="https://goldsgym.in/memberships.html">Buy Membership Now</a></li>
+              <li><a href="https://goldsgym.in/blog.html">Blogs</a></li>
+              <li><a href="https://goldsgym.in/calendar-2020.html">Calender 2020</a></li>
+              <li><a href="https://goldsgym.in/all-event.html">Our Events</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebarOption" onclick="showDropdown(2)">
+          <div class="sidebarHeader">
+            <h3>Fitness Institute-GGFI</h3>
+            <span class="arrow down"></span>
+          </div>
+          <div id="secondDropdown">
+            <ul>
+              <li><a href="https://goldsgym.in/gymcourse.html#about">About Us</a></li>
+              <li><a href="https://goldsgym.in/gymcourse.html#faculity">Our Faculty</a></li>
+              <li><a href="https://goldsgym.in/gymcourse.html#accreditations">Certification & Accreditations</a></li>
+              <li><a href="https://goldsgym.in/gymcourse.html#accreditations">Courses</a></li>
+              <li><a href="https://goldsgym.in/courses.html">Buy a course</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebarOption">
+          <div class="sidebarHeader">
+            <h3>Gallery</h3>
+          </div>
+        </div>
+        <div class="sidebarOption" onclick="showDropdown(3)">
+          <div class="sidebarHeader">
+            <h3>Programs</h3>
+            <span class="arrow down"></span>
+          </div>
+          <div id="thirdDropdown">
+            <ul>
+              <li><a href="https://goldsgym.in/goldgym-corporate-memberships.html">Personal Training Program</a></li>
+              <li><a href="https://goldsgym.in/personal-trainingour-programs.html">Quick Result Program</a></li>
+              <li><a href="https://goldsgym.in/quick-result-programme.html">Group Program</a></li>
+              <li><a href="https://goldsgym.in/ggx-studio.html">Group Program</a></li>
+              <li><a href="https://goldsgym.in/corporate-wellness-program.html">Corporate Wellness Program</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebarOption">
+          <div class="sidebarHeader">
+            <h3>Franchise</h3>
+          </div>
+        </div>
+        <div class="sidebarOption">
+          <div class="sidebarHeader">
+            <h3>Advertise with us</h3>
+          </div>
+        </div>
+        <div class="sidebarOption">
+          <div class="sidebarHeader">
+            <h3>Contact</h3>
+          </div>
+        </div>
+      </div>
+      <div class="sidebarTrial">
+        <a href="https://goldsgym.in/memberships.html">Free Trial</a>
+      </div>
+      <div class="sidebarButton">
+        <a href="https://goldsgym.in/user/registration">Join Now</a>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header-logo">
+        <a class="nav-brand" href="https://goldsgym.in/">
+          <img
+            src="https://goldsgym.in/assets/images/logo-pink.png"
+            alt="StarGym"
+          />
+        </a>
+      </div>
+      <div class="classyNavbar"  onclick="toggleClass()">
+        <span class="navbarToggler" id="classicNavbar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div class="header-navBar">
+        <div class="header-dropdown">
+          <button class="header-dropbtn">Get Started</button>
+          <div class="header-dropdown-content">
+            <a href="#">Our Gyms India</a>
+            <a href="#">Our Gyms Nepal</a>
+            <a href="#">Coming Soon</a>
+            <a href="#">Pre Sales</a>
+            <a href="#">Amazing Offers</a>
+          </div>
+        </div>
+        <div class="header-dropdown">
+          <button class="header-dropbtn">Fitness Institute</button>
+        </div>
+        <div class="header-dropdown">
+          <button class="header-dropbtn">Gallery</button>
+        </div>
+        <div class="header-dropdown">
+          <button class="header-dropbtn">Programs</button>
+          <div class="header-dropdown-content">
+            <a href="#">Corporate Membership</a>
+            <a href="#">Personal Training</a>
+            <a href="#">Quick Result</a>
+            <a href="#">Group Program</a>
+          </div>
+        </div>
+      </div>
+      <div class="header-button-box">
+        <button class="header-button">Join Now</button>
+        <button class="header-button">Free Trial</button>
+      </div>
+    </div>
+    <div class="progressBar">
+      <div class="myBar" id="myBar"></div>
+    </div>
+    <div class="gallery-container">
+      <div class="mySlides fade">
+        <div class="numberText">1/4</div>
+        <img
+          src="https://goldsgym.in/uploads/slider/compress-GGFi%20online%20batches%20web%20banner-01.jpg"
+          alt="image1"
+          style="width: 100%"
+        />
+        <div class="text">Join Our Team</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">2/4</div>
+        <img
+          src="https://goldsgym.in/uploads/slider/compress-Summer%20campaign%20web%20banner-01.jpg"
+          alt="image2"
+          style="width: 100%"
+        />
+        <div class="text">Train Insane</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">3/4</div>
+        <img
+          src="	https://goldsgym.in/uploads/slider/compress-App%20web%20banner-01.jpg"
+          alt="image3"
+          style="width: 100%"
+        />
+        <div class="text">Get Our App</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numberText">4/4</div>
+        <img
+          src="https://goldsgym.in/uploads/slider/compress-ZIXA-May-GG-Banner.jpg"
+          alt="image4"
+          style="width: 100%"
+        />
+        <div class="text">Our Byproducts</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="ourOrganization" style="text-align: center">
+      <br />
+      <br />
+      <h4 class="firstLine">We can give you</h4>
+      <div class="secondLine"><i>Much More Than Others</i></div>
+      <br />
+      <div class="sketchContainer">
+        <div class="sketchImg">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/gyms.png"
+            alt="sketch1"
+          />
+          <h3>156 Gyms</h3>
+        </div>
+        <div class="sketchImg">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/cities.png"
+            alt="sketch2"
+          />
+          <h3>95 Cities</h3>
+        </div>
+        <div class="sketchImg">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/states.png"
+            alt="sketch3"
+          />
+          <h3>26 States</h3>
+        </div>
+        <div class="sketchImg">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/Website_Personal.png"
+            alt="sketch4"
+          />
+          <h3>Personal Training Program</h3>
+        </div>
+        <div class="sketchImg">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/Corporate.png"
+            alt="sketch5"
+          />
+          <h3>Corporate Wellness Program</h3>
+        </div>
+        <div class="sketchImg">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/Group_Exercise.png"
+            alt="sketch6"
+          />
+          <h3>Group Program</h3>
+        </div>
+      </div>
+    </div>
+    <section class="offer">
+      <div class="downloadAppContainer">
+        <a href="https://goldsgym.in/#app-soon" class="downloadApp"
+          ><span>Download Now</span></a
+        >
+      </div>
+      <div class="offerContainer">
+        <h1>DOWNLOAD THE GOLD'S GYM INDIA APP TODAY</h1>
+        <h2>Get access to workout videos by international fitness trainers</h2>
+      </div>
+    </section>
+    <section class="training">
+      <div class="trainingOption">
+        <a href="https://goldsgym.in/franchise.html/#mov" class="trainingLogo">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/client.png"
+            class="trainingImg"
+            alt="image"
+          />
+        </a>
+      </div>
+      <div class="trainingOption">
+        <a href="https://goldsgym.in/franchise.html/#mov" class="trainingLogo">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/client1.png"
+            class="trainingImg"
+            alt="image"
+          />
+        </a>
+      </div>
+      <div class="trainingOption">
+        <a href="https://goldsgym.in/franchise.html/#mov" class="trainingLogo">
+          <img
+            src="https://goldsgym.in/uploads/home_icons/client2.png"
+            class="trainingImg"
+            alt="image"
+          />
+        </a>
+      </div>
+    </section>
+    <section class="specialOffer">
+      <div class="specialOfferContainer">
+        <div class="specialLeft">
+          <h2>SPECIAL OFFER</h2>
+          <a href="https://goldsgym.in/user/registration"
+            ><span>Sign Me Up</span></a
+          >
+        </div>
+        <div class="specialRight">
+          <h2>BUY A GOLD'S GYM MEMBERSHIP TODAY</h2>
+          <h3>START YOUR FITNESS JOURNEY TODAY</h3>
+        </div>
+      </div>
+    </section>
+    <div class="touchForm">
+      <div class="touchLeft">
+        <h1>OUR <span>LATEST VIDEO</span></h1>
+        <iframe
+          class="videou"
+          height="530 px"
+          src="https://www.youtube.com/embed/6G4r6Cn9WGM"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="touchRight">
+        <h1>GET IN TOUCH <span>WITH US</span></h1>
+        <form>
+          <select>
+            <option value="none" selected disabled hidden>
+              SELECT A OPTION
+            </option>
+            <option value="1">GET A TRAINING SESSION</option>
+            <option value="2">JOIN A GYM</option>
+            <option value="3">APPLY FOR TRAINING</option>
+            <option value="4">INTERESTED IN MONTHLY PROMO</option>
+            <option value="5">WRITE US A TESTIMONIAL</option>
+            <option value="6">ADVERTISE WITH US</option>
+            <option value="7">CONTACT US</option>
+            <option value="8">SUBSCRIBE TO OUR NEWSLETTER</option>
+          </select>
+          <br />
+          <input placeholder="Enter Name" type="text" />
+          <br />
+          <input placeholder="Enter Email" type="email" />
+          <br />
+          <input placeholder="Enter Phone" type="number" />
+          <br />
+          <select>
+            <option value="none" selected disabled hidden>
+              --PLEASE SELECT A STATE--
+            </option>
+            <option value="24">Andhra Pradesh</option>
+            <option value="25">Arunachal Pradesh</option>
+            <option value="26">Assam</option>
+            <option value="27">Bihar</option>
+            <option value="28">Chandigarh</option>
+            <option value="29">Chhattisgarh</option>
+            <option value="32">Delhi NCR</option>
+            <option value="33">Goa</option>
+            <option value="34">Gujarat</option>
+            <option value="35">Haryana</option>
+            <option value="37">Jammu and Kashmir</option>
+            <option value="38">Jharkhand</option>
+            <option value="39">Karnataka</option>
+            <option value="40">Kerala</option>
+            <option value="42">Madhya Pradesh</option>
+            <option value="43">Maharashtra</option>
+            <option value="44">Manipur</option>
+            <option value="45">Meghalaya</option>
+            <option value="48">Orissa</option>
+            <option value="50">Punjab</option>
+            <option value="51">Rajasthan</option>
+            <option value="53">Tamil Nadu</option>
+            <option value="54">Telangana</option>
+            <option value="55">Tripura</option>
+            <option value="56">Uttar Pradesh</option>
+            <option value="57">Uttarakhand</option>
+            <option value="58">West Bengal</option>
+          </select>
+          <br />
+          <br />
+        </form>
+        <button>JOIN NOW</button>
+      </div>
+    </div>
+    <section class="preSale">
+      <div class="saleHeadContainer">
+        <h1>PRE-SALE OFFERS <span>HAVE BEGUN</span></h1>
+        <h5>BOOK NOW FOR SPECIAL RATES</h5>
+      </div>
+      <div class="saleCardContainer">
+        <div class="saleCard">
+          <h3>GOLD'S GYM KHANNA GT ROAD</h3>
+          <button>View</button>
+        </div>
+        <div class="saleCard">
+          <h3>GOLD'S GYM BENGALURU VARTHUR</h3>
+          <button>View</button>
+        </div>
+        <div class="saleCard">
+          <h3>GOLD'S GYM NAGARBHAVI</h3>
+          <button>View</button>
+        </div>
+      </div>
+    </section>
+    <section class="comingSoon">
+      <br />
+      <br />
+      <div>
+        <img src="https://goldsgym.in/assets/frontend/images/line.png" />
+      </div>
+      <div class="comingSoonHead">
+        <h4>GYMS COMING <span>Soon</span></h4>
+      </div>
+      <div class="comingSoonLocation">
+        <div class="locationInformation">
+          <p>
+            <strong>GYMS COMING SOON :</strong> KHARADI – PUNE | CHAKAN - PUNE|
+            DIPHU - ASSAM | KATHMANDU - NEPAL | KALYAN - MAHARASHTRA
+          </p>
+        </div>
+        <div class="locationSlide">
+          <div class="locationImg animo">
+            <img src="https://goldsgym.in/uploads/blog/compress-g2.jpg" />
+          </div>
+          <div class="locationImg animo">
+            <img
+              src="https://goldsgym.in/uploads/blog/compress-g2.jpg"
+              alt="img2"
+            />
+          </div>
+          <div class="locationImg animo">
+            <img src="https://goldsgym.in/uploads/blog/compress-g2.jpg" />
+          </div>
+          <div class="locationDots animo">
+            <span class="locationCurrDot" onclick="currLocation(1)"></span>
+            <span class="locationCurrDot" onclick="currLocation(2)"></span>
+            <span class="locationCurrDot" onclick="currLocation(3)"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gold">
+      <div class="goldContainer">
+        <br />
+        <br />
+        <div style="position: relative">
+          <img src="https://goldsgym.in/assets/frontend/images/line.png" />
+        </div>
+      </div>
+      <div class="goldHead" style="position: relative">
+        <h4>Gold's Gym <span>Fitness Institute</span></h4>
+        <p>Physical Activity Or Can Improve Your Health</p>
+      </div>
+      <div class="goldGrid">
+        <div>
+          <img src="https://goldsgym.in/uploads/ggfi/img1.png" />
+        </div>
+        <div>
+          <img
+            src="	https://goldsgym.in/uploads/ggfi/img2.png
+          "
+          />
+        </div>
+        <div>
+          <img src="https://goldsgym.in/uploads/ggfi/img3.png" />
+        </div>
+        <div>
+          <img src="https://goldsgym.in/uploads/ggfi/img1.png" />
+        </div>
+      </div>
+      <div class="goldButton">
+        <a href="https://goldsgym.in/courses.html">Know More</a>
+      </div>
+    </section>
+    <section class="latestEvent">
+      <div class="latestEventHead">
+        <h2>LATEST <span>EVENT</span></h2>
+      </div>
+      <div class="eventCardContainer">
+        <div class="eventCardList">
+          <div id="motion">
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-Gold's%20Flow.jpg"
+              />
+              <h3>Best Cardio Bodyweight Exercises</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-5-1-580x400.jpg"
+              />
+              <h3>Best Bodyweight Exercises</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-3-2-580x400.jpg"
+              />
+              <h3>The Truth About Women’s Training</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-6-1-580x400.jpg"
+              />
+              <h3>Best Bodyweight Exercises</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-GGFI%20buddy%20referral%20post%20June-01.jpg"
+              />
+              <h3>Gold's Gym Birthday</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-DSC_6224-min.JPG"
+              />
+              <h3>Jaipur Convention</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-DSC_0516-min.JPG"
+              />
+              <h3>Jaipur Convention</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-DSC_6274-min.JPG"
+              />
+              <h3>Jaipur Convention</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="	https://goldsgym.in/uploads/events/compress-DSC_0807-min.JPG"
+              />
+              <h3>Jaipur Convention</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-DSC_4543-min.JPG"
+              />
+              <h3>Jaipur Convention</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="	https://goldsgym.in/uploads/events/compress-b55914e0-c163-4aff-bad3-b02bb688e7a4-min.jpg"
+              />
+              <h3>Kochi Event</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="	https://goldsgym.in/uploads/events/compress-Greater%20Kailash%20social%20media%20Ad%203-01.jpg"
+              />
+              <h3>Greater-Kailash</h3>
+              <p>----------------</p>
+            </div>
+            <div class="eventCard">
+              <img
+                src="https://goldsgym.in/uploads/events/compress-Greater-Kailash%20social-media-Delhi.jpg"
+              />
+              <h3>Greater-Kailash-1</h3>
+              <p>----------------</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blogContainer">
+        <div class="blogHeader">
+          <h1>THE LATEST BLOGS</h1>
+        </div>
+        <div class="blogContentContainer">
+          <div class="blogContent">
+            <div class="blogDate">
+              <span>23</span>
+              <span>FEB</span>
+              <span>2022</span>
+            </div>
+            <div class="blogAuthor">
+              <p class="authorName">Manish Patole</p>
+              <p class="blogAbout">Is banana good for weight loss?</p>
+              <p class="blogAnswer">
+                “Bananas are a healthful addition to a balanced diet for weight
+                loss, as they provide a range of vital nutrients and are a good
+                source of fiber. Bananas make an excellent snack food, dessert
+                or breakfast. Their versatility makes them easy to add to your
+                diet plan for
+              </p>
+              <br />
+              <a href="https://goldsgym.in/blog/is-banana-good-for-weight-loss"
+                >Read More
+                <i class='fas fa-arrow-alt-circle-right' style='font-size:20px;'>&#x27A1;</i>
+              </a>
+            </div>
+          </div>
+          <div class="blogContent">
+            <div class="blogDate">
+              <span>31</span>
+              <span>MAY</span>
+              <span>20212</span>
+            </div>
+            <div class="blogAuthor">
+              <p class="authorName">Manish Patole</p>
+              <p class="blogAbout">How do i cut down belly fat?</p>
+              <p class="blogAnswer">
+                ‘Abs are made in the kitchen’. How many times have you heard or
+                seen this quote while browsing on how to lose belly fat fast?
+                This holds true, without a proper diet with the proper foods,
+                you will not achieve those six pack abs that you crave so much.
+                But what foods
+              </p>
+              <br />
+              <a href="https://goldsgym.in/blog/how-do-i-cut-down-belly-fat""
+                >Read More
+                <i class='fas fa-arrow-alt-circle-right' style='font-size:20px;'>&#x27A1;</i>
+              </a>
+            </div>
+          </div>
+          <div class="blogContent">
+            <div class="blogDate">
+              <span>23</span>
+              <span>FEB</span>
+              <span>2022</span>
+            </div>
+            <div class="blogAuthor">
+              <p class="authorName">Manish Patole</p>
+              <p class="blogAbout">GROW, NOURISH, SUSTAIN THROUGH FOOD!</p>
+              <p class="blogAnswer">
+                "It’s said the basic need of the individual is roti (food), kapda (body) and makaan (shelter). Give a deep thought to this, you will be amazed that food influences the clothes size that we wear and the kind of sleep that we get each day!
+                Is it that people who are not getting enough food are"
+              </p>
+              <br />
+              <a href="https://goldsgym.in/blog/grow-nourish-sustain-through-food"
+                >Read More
+                <i class='fas fa-arrow-alt-circle-right' style='font-size:20px;'>&#x27A1;</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="testimonialContainer">
+        <div class="testimonialHeader">
+          <h2>TESTIMONIALS</h2>
+        <p>What our clients says</p>
+        <p class="quote"></p>
+        </div>
+        <div class="testimonialContent fade">
+          <div class="circleContainer">
+            <div class="circle fade" ></div>
+          </div>
+          <p class="testimonialAutoplay fade">Hands down, best choice I’ve made training at Gold's Gym. VERY friendly team who make me actually want to go train. I look forward to walking through the doors and always feel amazing when I leave. Their trainers are exceptional, the overall vibe is great and I have had nothing but good experiences. I definitely recommend them to my friends and family.</p>
+          <small class="provider">~ Pradip Andhale</small>
+        </div>
+        <div class="testimonialContent fade">
+          <div class="circleContainer">
+            <div class="circle fade" ></div>
+          </div>
+          <p class="testimonialAutoplay fade">One of the best gyms to start your workout journey with. A very well managed Gym. Good staff. Good knowledge trainers. One of the special thing about the gym is positive energy, none of the gym have this kind of energy as compared to any other Gyms in this area. You will always feel energetic whenever you step in the Gym. Place doesn't matter at all it’s just the name its self-enough. I have joined in 2012 and was there for 4 year. NO COMPARISON WITH GOLD'S</p>
+          <small class="provider">~ Tejas Pardeshi</small>
+        </div>
+        <div class="testimonialContent fade">
+          <div class="circleContainer">
+            <div class="circle fade" ></div>
+          </div>
+          <p class="testimonialAutoplay fade">Amazing gym with awesome trainers, especially my trainer Mr SANDEEP!! Space is ample, equipment are quite good, staff is very friendly and the whole atmosphere is filled with positive vibes. It’s been just four days since I have joined this gym, and I can already feel the difference. One of the best gyms I have come across. And the best in Pune. Bravo!!</p>
+          <small class="provider">~ Ela Sharda</small>
+        </div>
+        <div class="testimonialContent fade">
+          <div class="circleContainer">
+            <div class="circle fade" ></div>
+          </div>
+          <p class="testimonialAutoplay fade">It's a very nice gym with world top class equipment of Life fitness and Hammer Strength, and people surrounding is also good, and staff of this branch is very kind, they help members very well and all the trainers are certified with good knowledge of teaching as well. Good place to achieve your goals.</p>
+          <small class="provider">~ Mayur Abnave</small>
+        </div>
+        <div class="testimonialContent fade">
+          <div class="circleContainer">
+            <div class="circle fade" ></div>
+          </div>
+          <p class="testimonialAutoplay fade">So this place is more than just a gym. You can walk in and make friends that will guide you and help you out each time. They have great programs such as kickboxing, yoga, Zumba etc that you can opt for to change the routine once in a while. They have dedicated cardio and spinning sections with mood lighting and good instructors. The staff is humble and helpful whenever approached.</p>
+          <small class="provider">~ Utkrisht Kaushik</small>
+        </div>
+        <div class="testimonialContent fade">
+          <div class="circleContainer">
+            <div class="circle fade" ></div>
+          </div>
+          <p class="testimonialAutoplay fade">Amazing staff.!!! Hygiene is always a priority here. There are lockers to keep our bags. The personal trainers are extremely helpful. I have been training under Pranay Bane and sir has been most motivating.</p>
+          <small class="provider">~ Natasha Mondegari</small>
+        </div>
+      </div>
+      <div class="testimonialDots fade">
+        <span class="sixDots" onclick="autoPlay(1)"></span>
+        <span class="sixDots" onclick="autoPlay(2)"></span>
+        <span class="sixDots" onclick="autoPlay(3)"></span>
+        <span class="sixDots" onclick="autoPlay(4)"></span>
+        <span class="sixDots" onclick="autoPlay(5)"></span>
+        <span class="sixDots" onclick="autoPlay(6)"></span>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="credits">
+        <div class="quickLinksContainer">
+          <h2 class="quickLinks">QUICK LINKS</h2>
+        <div class="links">
+          <div class="leftLinks">
+            <ul>
+              <li><a href="https://goldsgym.in/about.html">About us</a></li>
+              <li><a href="https://goldsgym.in/our-team.html">Our Team</a></li>
+              <li><a href="https://goldsgym.in/careers">Careers</a></li>
+              <li><a href="https://goldsgym.in/testimonials.html">Testimonials</a></li>
+              <li><a href="https://goldsgym.in/work-culture.html">Work Culture</a></li>
+              <li><a href="https://goldsgym.in/press-room.html">Press Room</a></li>
+              <li><a href="https://goldsgym.in/promotions.html">Promotions</a></li>
+              <li><a href="https://goldsgym.in/events.html">Events</a></li>
+              <li><a href="https://goldsgym.in/amazing-offers.html">Amazing Offers</a></li>
+              <li><a href="https://goldsgym.in/ggx-studio.html">Group Program</a></li>
+            </ul>
+          </div>
+          <div class="rightLinks">
+            <ul>
+              <li><a href="https://goldsgym.in/blog.html">Blogs</a></li>
+              <li><a href="https://goldsgym.in/corporate-wellness-program.html">Programs</a></li>
+              <li><a href="https://goldsgym.in/gallery.html">Gallery</a></li>
+              <li><a href="https://goldsgym.in/franchise.html">Franchise</a></li>
+              <li><a href="https://goldsgym.in/ggfi.html">GGFI</a></li>
+              <li><a href="https://goldsgym.in/advertisments.html">Advertise With us</a></li>
+              <li><a href="https://goldsgym.in/memberships.html">Buy Membership now</a></li>
+              <li><a href="https://goldsgym.in/gold-gyms.html">Gym Locator</a></li>
+              <li><a href="https://goldsgym.in/sitemap.html">Sitemap</a></li>
+              <li><a href="https://goldsgym.in/calendar-2020.html">Gold's Gym India Calender</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        
+        <div class="newsLetter">
+          <div class="mailContainer">
+            <h2>NEWS LETTER</h2>
+            <p>sign up for our mailing list to get latest updates and offers</p>
+            <label style="position: relative;"> 
+              <input type="email" placeholder="E-mail">
+              <button class="fa fa-chevron-right" style="position: absolute; cursor:pointer"></button>
+            </label>
+            <div class="appIcon">
+              <ul>
+                <li class="appItem">
+                  <a target="_blank" href="https://www.facebook.com/GoldsGymIndia" class="social-fb fa fa-facebook"></a>
+                </li>
+                <li class="appItem">
+                  <a target="_blank" href="https://twitter.com/GoldsGymIndia" class="social-twitter fa fa-twitter"></a>
+                </li>
+                <li class="appItem">
+                  <a target="_blank" href="https://www.youtube.com/channel/UCCPNLx0irb9sbFdsdTCV6rg" class="social-youtube fa fa-youtube"></a>
+                </li>
+                <li class="appItem">
+                  <a target="_blank" href="https://www.instagram.com/goldsgymindia/" class="social-inst fa fa-instagram"></a>
+                </li>
+                <li class="appItem">
+                  <a target="_blank" href="https://www.linkedin.com/company/gold-s-gym-india/" class="social-link fa fa-linkedin"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="latestNews">
+          <h2>LATEST NEWS</h2>
+          <div class="news">
+            <div class="newsLeft">
+              <img src="https://goldsgym.in/assets/frontend/images/post1.jpg">
+            </div>
+            <div class="newsRight">
+              <a href="https://goldsgym.in/press-news/7-simple-ways-to-boost-your-metabolism">7 simple ways to boost your metabolism</a>
+            </div>
+          </div>
+          <div class="news">
+            <div class="newsLeft">
+              <img src="https://goldsgym.in/assets/frontend/images/post1.jpg">
+            </div>
+            <div class="newsRight">
+              <a href="https://goldsgym.in/press-news/reverse-running-pilates-and-more-trends-that-will-keep-you-fit-in-2022">Reverse Running, Pilates, And More: Trends That Will Keep You Fit In 2022</a>
+            </div>
+          </div>
+          <div class="news">
+            <div class="newsLeft">
+              <img src="https://goldsgym.in/assets/frontend/images/post1.jpg">
+            </div>
+            <div class="newsRight">
+              <a href="https://goldsgym.in/press-news/5-most-common-myths-about-carbs-busted-by-experts">5 most common myths about carbs busted by experts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="creditsGallery">
+        <div class="creditsGalleryHead">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+      <div class="creditsSlides">
+        <div class="creditsSlidesContainer">
+          <div id="creditsSlidesItems">
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_1__1599152658_28800.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_2__1599152923_11541.jpg"></a></div>
+            <div class="creditsItem"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_3__1599152955_85549.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_4__1599152983_33793.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_5__1599153019_75619.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="	https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_6__1599153050_98558.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="	https://goldsgym.in/uploads/gallery/compress-photo-1558611848-73f7eb4001a1.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-photo-1561214078-f3247647fc5e.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="	https://goldsgym.in/uploads/gallery/compress-photo-1546483875-ad9014c88eba.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_1__1599152658_28800.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_2__1599152923_11541.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_3__1599152955_85549.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_4__1599152983_33793.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="	https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_5__1599153019_75619.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_6__1599153050_98558.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" height="110" src="	https://goldsgym.in/uploads/gallery/compress-photo-1558611848-73f7eb4001a1.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" height="110" src="	https://goldsgym.in/uploads/gallery/compress-photo-1561214078-f3247647fc5e.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" height="110" src="	https://goldsgym.in/uploads/gallery/compress-photo-1546483875-ad9014c88eba.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_1__1599152658_28800.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_2__1599152923_11541.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="	https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_3__1599152955_85549.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="	https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_4__1599152983_33793.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_5__1599153019_75619.jpg"></a></div>
+            <div class="creditsItems"><a href="https://goldsgym.in/gallery.html"><img width="200" src="https://goldsgym.in/uploads/gallery/compress-GOLDS_1920x1080_6__1599153050_98558.jpg"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="termsFooter">
+        <div class="reserved">
+          <p>@2022 Gold's Gym.in. All Rights Reserved. </p>
+        </div>
+    
+          <div class="googleStore">
+            <a href="http://bit.ly/GGAppAndroid" target="_blank"><img src="https://goldsgym.in/assets/google-play-store.png"></a>
+          </div>
+          <div class="appleStore"><a href="http://bit.ly/GGIAppIOS"><img src="	https://goldsgym.in/assets/apple-app-store.png"></a></div>
+        
+        <div class="conditions"><a href="https://goldsgym.in/terms-and-conditions.html">Terms & Conditions</a>
+        <a href="https://goldsgym.in/privacy-policy.html"> Privacy Policy</a></div>
+      </div>
+    </section>
+    <button id="scrollTop" class="scrollTop" onclick="topFunction()" style="font-size: 30px;">&#8593;</button>
+  </body>
+  <script defer src="responsive.js"></script>
+</html>
